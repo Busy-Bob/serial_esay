@@ -1,5 +1,5 @@
 Flow report for serial
-Sun Jul 02 00:31:34 2017
+Mon Jul 03 15:35:34 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jul 02 00:31:34 2017       ;
+; Flow Status                        ; Successful - Mon Jul 03 15:35:34 2017       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; serial                                      ;
-; Top-level Entity Name              ; test1                                       ;
+; Top-level Entity Name              ; serial1                                     ;
 ; Family                             ; Cyclone II                                  ;
 ; Device                             ; EP2C5Q208C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,275                                       ;
-;     Total combinational functions  ; 1,275                                       ;
-;     Dedicated logic registers      ; 81                                          ;
-; Total registers                    ; 81                                          ;
-; Total pins                         ; 28                                          ;
+; Total logic elements               ; 1,570                                       ;
+;     Total combinational functions  ; 1,560                                       ;
+;     Dedicated logic registers      ; 168                                         ;
+; Total registers                    ; 168                                         ;
+; Total pins                         ; 23                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/02/2017 00:31:24 ;
+; Start date & time ; 07/03/2017 15:35:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; serial              ;
 +-------------------+---------------------+
@@ -75,29 +75,34 @@ applicable agreement for further details.
 +--------------------------------------+--------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+--------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 190078352558919.149892668410376      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 190078352558919.149906732520596      ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                   ; --            ; --          ; serial_output  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                   ; --            ; --          ; test1          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                   ; --            ; --          ; serial_in      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test1                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                          ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)            ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                      ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/serial_output.vt ; --            ; --          ; serial_output  ;
 ; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/test1.vt         ; --            ; --          ; test1          ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/serial_in.vt     ; --            ; --          ; serial_in      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; serial_output_vlg_tst                ; --            ; --          ; serial_output  ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; test1_vlg_tst                        ; --            ; --          ; test1          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; serial_in_vlg_tst                    ; --            ; --          ; serial_in      ;
 ; EDA_TEST_BENCH_NAME                  ; serial_output                        ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; test1                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; serial_in                            ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 ns                                ; --            ; --          ; serial_output  ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 ns                                ; --            ; --          ; test1          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                 ; --            ; --          ; serial_in      ;
 ; EDA_TIME_SCALE                       ; 1 ps                                 ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                   ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                    ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                             ; --            ; test1       ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                ; --            ; test1       ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                               ; --            ; test1       ; Top            ;
+; PARTITION_COLOR                      ; 16764057                             ; --            ; serial1     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                ; --            ; serial1     ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                               ; --            ; serial1     ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                         ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; test1                                ; serial        ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; serial1                              ; serial        ; --          ; --             ;
 +--------------------------------------+--------------------------------------+---------------+-------------+----------------+
 
 
@@ -106,8 +111,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 452 MB              ; 00:00:10                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 449 MB              ; 00:00:10                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

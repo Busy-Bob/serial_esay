@@ -49,201 +49,24 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 10 ns
-do serial_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/test1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1
-# 
-# Top level modules:
-# 	test1
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/serial_output.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module serial_output
-# 
-# Top level modules:
-# 	serial_output
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/key_out.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module key_out
-# 
-# Top level modules:
-# 	key_out
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial/simulation/modelsim {C:/altera/13.0/EX_serial/simulation/modelsim/test1.vt}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1_vlg_tst
-# 
-# Top level modules:
-# 	test1_vlg_tst
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test1_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test1_vlg_tst 
-# Loading work.test1_vlg_tst
-# Loading work.test1
-# Loading work.key_out
-# Loading work.serial_output
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ns
-do serial_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/test1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1
-# 
-# Top level modules:
-# 	test1
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/serial_output.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module serial_output
-# 
-# Top level modules:
-# 	serial_output
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/key_out.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module key_out
-# 
-# Top level modules:
-# 	key_out
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial/simulation/modelsim {C:/altera/13.0/EX_serial/simulation/modelsim/test1.vt}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1_vlg_tst
-# 
-# Top level modules:
-# 	test1_vlg_tst
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test1_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test1_vlg_tst 
-# Loading work.test1_vlg_tst
-# Loading work.test1
-# Loading work.key_out
-# Loading work.serial_output
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ns
-do serial_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/test1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1
-# 
-# Top level modules:
-# 	test1
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/serial_output.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module serial_output
-# 
-# Top level modules:
-# 	serial_output
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/key_out.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module key_out
-# 
-# Top level modules:
-# 	key_out
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial/simulation/modelsim {C:/altera/13.0/EX_serial/simulation/modelsim/test1.vt}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1_vlg_tst
-# 
-# Top level modules:
-# 	test1_vlg_tst
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test1_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test1_vlg_tst 
-# Loading work.test1_vlg_tst
-# Loading work.test1
-# Loading work.key_out
-# Loading work.serial_output
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ns
-run
-do serial_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/test1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1
-# 
-# Top level modules:
-# 	test1
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/serial_output.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module serial_output
-# 
-# Top level modules:
-# 	serial_output
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial {C:/altera/13.0/EX_serial/key_out.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module key_out
-# 
-# Top level modules:
-# 	key_out
-# 
-# vlog -vlog01compat -work work +incdir+C:/altera/13.0/EX_serial/simulation/modelsim {C:/altera/13.0/EX_serial/simulation/modelsim/test1.vt}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module test1_vlg_tst
-# 
-# Top level modules:
-# 	test1_vlg_tst
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test1_vlg_tst
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test1_vlg_tst 
-# Loading work.test1_vlg_tst
-# Loading work.test1
-# Loading work.key_out
-# Loading work.serial_output
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 10 ns
 run
 run
-add wave -position end  sim:/test1_vlg_tst/i1/b2v_inst2/ser
-restart
 run
-add wave -position end  sim:/test1_vlg_tst/i1/b2v_inst2/OUT_shanke_hand
-add wave -position end  sim:/test1_vlg_tst/i1/b2v_inst/OUT_finish
-restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run

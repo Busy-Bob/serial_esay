@@ -3,6 +3,7 @@
 // finish 要持续整个时间
 // temp_value
 // 可以不用固定IN_
+
 module serial_output(input IN_clk, input IN_finish, input [63:0] IN_value, input [4:0] IN_number,
 					output reg OUT_ser, output reg OUT_shanke_hand);
 
@@ -102,13 +103,6 @@ module serial_output(input IN_clk, input IN_finish, input [63:0] IN_value, input
 	end
 	endfunction
 	
-//	function [7:0] reverse;
-//	input [7:0] x;
-//	begin
-//		reverse = (x & 8'h0F) << 4 + (x & 8'hF0) >> 4;
-//		reverse = (reverse & 8'h33) << 2 + (reverse & 8'hCC) >> 2;
-//		reverse = (reverse & 8'h55) << 1 + (reverse & 8'hAA) >> 1;
-//	end
-//	endfunction
+
 	
 endmodule 

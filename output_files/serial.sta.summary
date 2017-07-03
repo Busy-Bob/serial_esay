@@ -2,68 +2,116 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'IN_finish'
-Slack : -43.559
-TNS   : -407.112
+Type  : Slow Model Setup 'key_out:inst3|OUT_finish'
+Slack : -22.728
+TNS   : -73.808
 
-Type  : Slow Model Setup 'IN_clk'
-Slack : -0.727
-TNS   : -5.349
+Type  : Slow Model Setup 'clk'
+Slack : -7.234
+TNS   : -387.669
 
-Type  : Slow Model Hold 'IN_clk'
-Slack : 1.116
+Type  : Slow Model Setup 'divider:inst|OUT_clk1'
+Slack : -5.418
+TNS   : -376.327
+
+Type  : Slow Model Setup 'divider:inst|OUT_clk2'
+Slack : -1.191
+TNS   : -9.038
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.611
+TNS   : -5.205
+
+Type  : Slow Model Hold 'divider:inst|OUT_clk1'
+Slack : -1.537
+TNS   : -1.537
+
+Type  : Slow Model Hold 'key_out:inst3|OUT_finish'
+Slack : -0.723
+TNS   : -1.156
+
+Type  : Slow Model Hold 'divider:inst|OUT_clk2'
+Slack : 0.686
 TNS   : 0.000
 
-Type  : Slow Model Hold 'IN_finish'
-Slack : 2.472
+Type  : Slow Model Recovery 'divider:inst|OUT_clk2'
+Slack : -0.534
+TNS   : -5.834
+
+Type  : Slow Model Removal 'divider:inst|OUT_clk2'
+Slack : 0.758
 TNS   : 0.000
 
-Type  : Slow Model Recovery 'IN_clk'
-Slack : -0.230
-TNS   : -1.987
-
-Type  : Slow Model Removal 'IN_clk'
-Slack : 0.402
-TNS   : 0.000
-
-Type  : Slow Model Minimum Pulse Width 'IN_clk'
+Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.941
-TNS   : -16.781
+TNS   : -99.885
 
-Type  : Slow Model Minimum Pulse Width 'IN_finish'
-Slack : -1.941
-TNS   : -1.941
+Type  : Slow Model Minimum Pulse Width 'divider:inst|OUT_clk1'
+Slack : -0.742
+TNS   : -135.044
 
-Type  : Fast Model Setup 'IN_finish'
-Slack : -12.471
-TNS   : -116.418
+Type  : Slow Model Minimum Pulse Width 'divider:inst|OUT_clk2'
+Slack : -0.742
+TNS   : -16.324
 
-Type  : Fast Model Setup 'IN_clk'
-Slack : 0.227
+Type  : Slow Model Minimum Pulse Width 'key_out:inst3|OUT_finish'
+Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Hold 'IN_clk'
-Slack : 0.551
+Type  : Fast Model Setup 'key_out:inst3|OUT_finish'
+Slack : -6.670
+TNS   : -21.697
+
+Type  : Fast Model Setup 'clk'
+Slack : -1.829
+TNS   : -96.738
+
+Type  : Fast Model Setup 'divider:inst|OUT_clk1'
+Slack : -1.147
+TNS   : -68.250
+
+Type  : Fast Model Setup 'divider:inst|OUT_clk2'
+Slack : 0.188
 TNS   : 0.000
 
-Type  : Fast Model Hold 'IN_finish'
-Slack : 0.590
+Type  : Fast Model Hold 'clk'
+Slack : -1.415
+TNS   : -2.817
+
+Type  : Fast Model Hold 'divider:inst|OUT_clk1'
+Slack : -0.937
+TNS   : -0.937
+
+Type  : Fast Model Hold 'key_out:inst3|OUT_finish'
+Slack : -0.520
+TNS   : -1.578
+
+Type  : Fast Model Hold 'divider:inst|OUT_clk2'
+Slack : 0.289
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'IN_clk'
-Slack : 0.243
+Type  : Fast Model Recovery 'divider:inst|OUT_clk2'
+Slack : 0.252
 TNS   : 0.000
 
-Type  : Fast Model Removal 'IN_clk'
-Slack : 0.105
+Type  : Fast Model Removal 'divider:inst|OUT_clk2'
+Slack : 0.124
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'IN_clk'
+Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
-TNS   : -11.380
+TNS   : -67.380
 
-Type  : Fast Model Minimum Pulse Width 'IN_finish'
-Slack : -1.380
-TNS   : -1.380
+Type  : Fast Model Minimum Pulse Width 'divider:inst|OUT_clk1'
+Slack : -0.500
+TNS   : -91.000
+
+Type  : Fast Model Minimum Pulse Width 'divider:inst|OUT_clk2'
+Slack : -0.500
+TNS   : -11.000
+
+Type  : Fast Model Minimum Pulse Width 'key_out:inst3|OUT_finish'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for serial
-Sun Jul 02 00:21:38 2017
+Mon Jul 03 15:17:57 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -8,7 +8,9 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -34,11 +36,46 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Jul 02 00:21:38 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon Jul 03 15:17:57 2017 ;
 ; Revision Name             ; serial                                ;
-; Top-level Entity Name     ; test1                                 ;
+; Top-level Entity Name     ; serial1                               ;
 ; Family                    ; Cyclone II                            ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------+
+; Simulation Generated Files                                     ;
++----------------------------------------------------------------+
+; Generated Files                                                ;
++----------------------------------------------------------------+
+; C:/altera/13.0/EX_serial/simulation/modelsim/serial.vo         ;
+; C:/altera/13.0/EX_serial/simulation/modelsim/serial_fast.vo    ;
+; C:/altera/13.0/EX_serial/simulation/modelsim/serial_v.sdo      ;
+; C:/altera/13.0/EX_serial/simulation/modelsim/serial_v_fast.sdo ;
++----------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -47,14 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sun Jul 02 00:21:37 2017
-Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off serial -c serial --gen_testbench
-Info (119006): Selected device EP2C5Q208C8 for design "serial"
-Info (201000): Generated Verilog Test Bench File C:/altera/13.0/EX_serial/simulation/modelsim/test1.vt for simulation
+    Info: Processing started: Mon Jul 03 15:17:56 2017
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off serial -c serial
+Info (204026): Generated files "serial.vo", "serial_fast.vo", "serial_v.sdo" and "serial_v_fast.sdo" in directory "C:/altera/13.0/EX_serial/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 402 megabytes
-    Info: Processing ended: Sun Jul 02 00:21:38 2017
+    Info: Peak virtual memory: 420 megabytes
+    Info: Processing ended: Mon Jul 03 15:17:57 2017
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
